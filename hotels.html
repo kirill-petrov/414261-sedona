@@ -29,28 +29,48 @@
       <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
-        <!-- пока так
-        <span>Инфраструктура:</span>
-        <ul>
-          <li>Бассейн</li>
-          <li>Парковка</li>
-          <li>Wi-Fi</li>
-        </ul>
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul class="filter-options">
+              <li>
+                <label for="pool">Бассейн</label>
+                <input type="checkbox" name="checkbox" id="pool" checked>
+              </li>
+              <li>
+                <label for="pool">Парковка</label>
+                <input type="checkbox" name="checkbox" id="parking">
+              </li>
+              <li>
+                <label for="pool">Wi-Fi</label>
+                <input type="checkbox" name="checkbox" id="wi-fi">
+              </li>
+          </fieldset>
 
-        <span>Тип жилья:</span>
-        <ul>
-          <li>Гостиница</li>
-          <li>Мотель</li>
-          <li>Апартаменты</li>
-        </ul> 
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul class="filter-options">
+              <li>
+                <label for="pool">Гостиница</label>
+                <input type="checkbox" name="checkbox" id="hotel" checked>
+              </li>
+              <li>
+                <label for="pool">Мотель</label>
+                <input type="checkbox" name="checkbox" id="motel" checked>
+              </li>
+              <li>
+                <label for="pool">Апартаменты</label>
+                <input type="checkbox" name="checkbox" id="apartments" checked>
+              </li>
+          </fieldset>
 
-        <span>
-          Стоимость в сутки (Р):
-            от 0
-            до 3000
-            Показать
-        </span>
-        -->
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <input type="range" name="radio">
+          </fieldset>
+          
+          <button type="submit">Показать</button>
+        </form>
       </section>
       
       <section class="sorter-block">

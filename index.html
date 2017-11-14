@@ -33,52 +33,59 @@
   			<h2 class="visually-hidden">Преимущества</h2>
   			<p class="features">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
 
-  			<ul class="features-list">
-  				<li class="features-item">
+  			<ul class="features-items">
+  				<li>
   					<b>Настоящий городок</b>
   					<span>№1</span>
   					<p>Седона — не аттракцион для туристов. Там течет своя жизнь</p>
   				</li>
-          <li class="features-img">
-            <img src="img/features-1.jpg" alt="features-1.png" width="800" height="401">
-          </li>
-          <li class="features-item-img">
-            <img src="img/features-2.jpg" alt="features-2.png" width="800" height="400">
-          </li>
-  				<li class="features-item">
+  				<li>
   					<b>Там есть<br>
             мост дьявола</b>
   					<span>№2</span>
   					<p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
   				</li>
-  				<li class="features-item">
+  				<li>
   					<b>Небольшая площадь</b>
   					<span>№3</span>
   					<p>Все достопремечательности находятся очень близко</p>
   				</li>
-  				<li class="features-item">
+  				<li>
   					<b>Красивая дорога</b>
   					<span>№4</span>
   					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
   				</li>
-  				<li class="features-item">
+  				<li>
   					<b>Мало туристов</b>
   					<span>№5</span>
   					<p>Большинство едет в Гранд-Каньон и толпится там</p>
-  				</li>				
-  			
-					<li class="features-item-city">
-						<b>Жильё</b>
-						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-					</li>
-					<li class="features-item-city">
-						<b>Еда</b>
-						<p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
-					</li>
-					<li class="features-item-city">
-						<b>Сувениры</b>
-						<p>Не только китайского, но и местного производства!</p>
-					</li>  				
+  				</li>
+          <li>
+            <ul class="features-items-hint">
+              <li>
+    						<b>Жильё</b>
+    						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+    					</li>
+    					<li>
+    						<b>Еда</b>
+    						<p>Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
+    					</li>
+    					<li>
+    						<b>Сувениры</b>
+    						<p>Не только китайского, но и местного производства!</p>
+    					</li>
+            </ul>
+          </li>
+          <li>
+            <ul class="features-items-img">
+              <li>
+                <img src="img/features-1.jpg" alt="Фотография городка" width="800" height="401">
+              </li>
+              <li class="features-item-img">
+                <img src="img/features-2.jpg" alt="Фотография ворот дьявола" width="800" height="400">
+              </li>
+            </ul>
+          </li>           				
   			</ul>
   		</section>
 
@@ -88,15 +95,37 @@
 				<p>Укажите предпологаемые даты поездки,<br>
 				и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         
-        <section сlass="modal modal-serch-hotel">
-          <b>Поиск гостиницы в Седоне</b>
-          <span>x</span>
+        <section сlass="modal modal-serch">
+          <button>
+            <b>Поиск гостиницы в Седоне</b>
+          </button>
+
+          <form class="serch-form"action="#" method="post">
+            <fieldset>
+              <legend>Форма поиска</legend>
+
+              <label for="date-of-arrival">Дата заезда</label>
+              <input type="date" id="date-of-arrival">
+
+              <label for="date-of-departure">Дата выезда</label>
+              <input type="date" id="date-of-departure">
+
+              <label for="grownup">Взрослые</label>
+              <input type="number" min="1" max="10" id="grownup" value="2">
+              
+              <label for="child">Дети</label>
+              <input type="number" min="1" max="10" id="child">
+
+              <button type="submit">Найти</button>
+
+            </form>
+          </fieldset>
         </section>
   		</section>
 
-      <section>
+      <section class="modal modal-map">
         <h2 class="visually-hidden">Карта</h2>
-        <span>x</span>
+        <button class="modal-close" type="button">x</button>
       </section>
   	</main>
 
