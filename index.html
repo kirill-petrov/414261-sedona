@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>    
+    <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -31,17 +31,19 @@
   			<h2 class="visually-hidden">Преимущества</h2>
   			<p class="features">Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
 
-  			<ul class="features-items">
+  			<ul class="features-list">
   				<li>
   					<b>Настоящий городок</b>
   					<span>№1</span>
   					<p>Седона — не аттракцион для туристов. Там течет своя жизнь</p>
-  				</li>
+            <img src="img/features-1.jpg" alt="Фотография городка" width="800" height="401">
+          </li>
   				<li>
   					<b>Там есть<br>
             мост дьявола</b>
   					<span>№2</span>
   					<p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+            <img src="img/features-2.jpg" alt="Фотография ворот дьявола" width="800" height="400">
   				</li>
   				<li>
   					<b>Небольшая площадь</b>
@@ -58,6 +60,7 @@
   					<span>№5</span>
   					<p>Большинство едет в Гранд-Каньон и толпится там</p>
   				</li>
+
           <li>
             <ul class="features-items-hint">
               <li>
@@ -74,17 +77,7 @@
     					</li>
             </ul>
           </li>
-          <li>
-            <ul class="features-items-img">
-              <li>
-                <img src="img/features-1.jpg" alt="Фотография городка" width="800" height="401">
-              </li>
-              <li class="features-item-img">
-                <img src="img/features-2.jpg" alt="Фотография ворот дьявола" width="800" height="400">
-              </li>
-            </ul>
-          </li>           				
-  			</ul>
+        </ul>
   		</section>
 
   		<section>
@@ -93,37 +86,45 @@
 				<p>Укажите предпологаемые даты поездки,<br>
 				и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         
-        <section сlass="modal modal-serch">
-          <button>
-            <b>Поиск гостиницы в Седоне</b>
-          </button>
+        <div class="interactive-form">
+          <a href="#hotel-search-form">Поиск гостиницы в Седоне</a>
 
-          <form class="serch-form"action="#" method="post">
+          <form class="search-form" action="#" method="post" id="hotel-search-form">
             <fieldset>
               <legend>Форма поиска</legend>
-
-              <label for="date-of-arrival">Дата заезда</label>
-              <input type="date" id="date-of-arrival">
-
-              <label for="date-of-departure">Дата выезда</label>
-              <input type="date" id="date-of-departure">
-
-              <label for="grownup">Взрослые</label>
-              <input type="number" min="1" max="10" id="grownup" value="2">
-              
-              <label for="child">Дети</label>
-              <input type="number" min="1" max="10" id="child">
-
-              <button type="submit">Найти</button>
-
-            </form>
-          </fieldset>
-        </section>
-  		</section>
+              <div>
+                <input type="date" name="arrival" id="arrival">
+                <label for="arrival">Дата заезда</label>
+                <button type="button">Выбрать дату</button>
+              </div>
+              <div>
+                <input type="date" name="departure" id="departure">
+                <label for="departure">Дата выезда</label>
+                <button type="button">Выбрать дату</button>
+              </div>
+              <div>
+                <button type="button">Меньше</button>
+                <label for="grownup">Взрослые</label>
+                <input type="number" min="1" max="10" name="grownup" id="grownup" value="2">
+                <button type="button">Больше</button>
+              </div>
+              <div>
+                <button type="button">Меньше</button>
+                <label for="child">Дети</label>
+                <input type="number" min="1" max="10" name="child" id="child">
+                <button type="button">Больше</button>
+              </div>
+              <div>
+                <button type="submit">Найти</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
 
       <section class="modal modal-map">
         <h2 class="visually-hidden">Карта</h2>
-        <button class="modal-close" type="button">x</button>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
   	</main>
 
