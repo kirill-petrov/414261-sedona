@@ -17,7 +17,7 @@
 					<li><a href="info.html">Информация</a></li>
 					<li><a href="#">Фото и видео</a></li>
 					<li><a href="#">Карта штата</a></li>
-					<li><a>Гостиницы</a></li>
+					<li><a class="site-navigation-current">Гостиницы</a></li>
 				</ul>
 			</nav>
   	</header>
@@ -25,6 +25,7 @@
 
   	<main class="container">
       <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
+
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form action="#" method="get">
@@ -43,6 +44,7 @@
                 <input type="checkbox" name="wi-fi" id="wi-fi">
                 <label for="wi-fi">Wi-Fi</label>
               </li>
+            </ul>
           </fieldset>
 
           <fieldset>
@@ -60,6 +62,7 @@
                 <input type="checkbox" name="apartments" id="apartments" checked>
                 <label for="apartments">Апартаменты</label>
               </li>
+            </ul>
           </fieldset>
 
           <fieldset>
@@ -74,14 +77,16 @@
       <section class="sorter-block">
         <h2 class="visually-hidden">Сортировка результатов</h2>
         <b>Найдено:3</b>
-        <div class="sorter">
+
+        <div class="sorter-settings">
           <b>Сортировка:</b>
-          <ul>          
-            <li><a>По цене</a></li>
+          <ul class="sorter-type">          
+            <li><a class="current">По цене</a></li>
             <li><a href="#">По типу</a></li>
             <li><a href="#">По рейтингу</a></li>
-            <li><a href="#">По возрастанию</a></li>
-            <li><a href="#">По убыванию</a></li>
+
+            <li><a class="min-max" href="#">По возрастанию</a></li>
+            <li><a class="min-max current">По убыванию</a></li>
           </ul>
         </div>
       </section>
@@ -92,12 +97,13 @@
           <li class="results-item">
             <h3>Amara Resort & Spa</h3>
             <a class="button" href="#">
-              <img src="img/results-amara.jpg" alt="Фото Amara Resort & Spa" width="135" height="90">
+              <img src="img/results-amara.jpg" alt="Фото гостиницы Amara Resort & Spa" width="135" height="90">
             </a>
+            <span class="stars">Количество звёзд</span>
             <b>Гостиница</b>
-            <a class="read-more" href="#">Подробнее</a>
             <b>от 3500 Р.</b>
-            <a class="button" href="#">Забронировать</a>
+            <a class="read-more" href="#">Подробнее</a>
+            <a class="reserve" href="#">Забронировать</a>
             <mark>Рейтинг: 8,5</mark>
           </li>
 
@@ -106,22 +112,24 @@
             <a href="#">
               <img src="img/results-desert.jpg" alt="Фото Desert Quail Inn"  width="135" height="90">              
             </a>
+            <span class="stars">Количество звёзд</span>
             <b>Мотель</b>
-            <a class="read-more" href="#">Подробнее</a>
             <b>от 2000 Р.</b>
-            <a class="button" href="#">Забронировать</a>
+            <a class="read-more" href="#">Подробнее</a>
+            <a class="reserve" href="#">Забронировать</a>
             <mark>Рейтинг: 8,9</mark>
           </li>
 
           <li class="results-item">
             <h3>Villas at Poco Diablo</h3>
             <a href="#">
-              <img src="img/results-villas.jpg" alt="Фото Villas at Poco Diablo"  width="135" height="90">              
+              <img src="img/results-villas.jpg" alt="Фото Villas at Poco Diablo"  width="135" height="90">
             </a>
+            <span class="stars">Количество звёзд</span>
             <b>Апартаменты</b>
-            <a class="read-more" href="#">Подробнее</a>
             <b>от 4000 Р.</b>
-            <a class="button" href="#">Забронировать</a>
+            <a class="read-more" href="#">Подробнее</a>
+            <a class="reserve" href="#">Забронировать</a>
             <mark>Рейтинг: 9,2</mark>
           </li>
         </ul>

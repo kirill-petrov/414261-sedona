@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="hotels-page">
   	<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo">
@@ -24,8 +24,9 @@
 
 
   	<main class="container">
- 			<h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-  		<p class="descript">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+      <p class="descript">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+
 
   		<section class="features">
   			<h2 class="visually-hidden">Преимущества</h2>
@@ -80,7 +81,7 @@
         </ul>
   		</section>
 
-  		<section>
+  		<section class="target-action">
 				<h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
 				<span>Заинтересовались?</span>
 				<p>Укажите предпологаемые даты поездки,<br>
@@ -88,34 +89,33 @@
         
         <div class="interactive-form">
           <a href="#hotel-search-form">Поиск гостиницы в Седоне</a>
-
           <form class="search-form" action="#" method="post" id="hotel-search-form">
             <fieldset>
               <legend>Форма поиска</legend>
               <div>
-                <input type="date" name="arrival" id="arrival">
                 <label for="arrival">Дата заезда</label>
-                <button type="button">Выбрать дату</button>
+                <input type="date" name="arrival" id="arrival">
+                <button class="search-form-select" type="button">Выбрать дату</button>
               </div>
               <div>
-                <input type="date" name="departure" id="departure">
                 <label for="departure">Дата выезда</label>
-                <button type="button">Выбрать дату</button>
+                <input type="date" name="departure" id="departure">
+                <button class="search-form-select" type="button">Выбрать дату</button>
               </div>
               <div>
-                <button type="button">Меньше</button>
                 <label for="grownup">Взрослые</label>
+                <button class="search-form-select" type="button">Меньше</button>
                 <input type="number" min="1" max="10" name="grownup" id="grownup" value="2">
-                <button type="button">Больше</button>
+                <button class="search-form-select" type="button">Больше</button>
               </div>
               <div>
-                <button type="button">Меньше</button>
                 <label for="child">Дети</label>
-                <input type="number" min="1" max="10" name="child" id="child">
-                <button type="button">Больше</button>
+                <button class="search-form-select" type="button">Меньше</button>
+                <input type="number" min="1" max="10" name="child" id="child" value="0">
+                <button class="search-form-select" type="button">Больше</button>
               </div>
               <div>
-                <button type="submit">Найти</button>
+                <button class="search-form-button" type="submit">Найти</button>
               </div>
             </fieldset>
           </form>
