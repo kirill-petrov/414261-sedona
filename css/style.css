@@ -104,10 +104,6 @@ a {
   border-bottom: 1px dashed #81b3d2;
 }
 
-.sorter-link-current {
-  color: #81b3d2;
-  border-bottom: none;	
-}
 
 .sorter-link:hover {
 	color: #81b3d2;
@@ -130,6 +126,10 @@ a {
 	color: #81b3d2;
 }
 
+.sorter-link-current {
+  color: #81b3d2;
+  border-bottom: none;	
+}
 
 
 .results-request {
