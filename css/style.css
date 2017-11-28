@@ -300,8 +300,14 @@ a {
 	flex-flow: row wrap;
 	width: 100%;
 	margin: 0;
-	padding: 0;
-	
+	padding: 0;	
+}
+
+.features-list li:nth-child(n+6) {
+	height: 256px;
+	color: #000;
+	background: #eee;
+	outline: 1px solid #941;
 }
 
 .features-item {
@@ -328,14 +334,19 @@ a {
 	background: url(../img/features-1.jpg) no-repeat center;
 }
 
+.features-photo-bridge {
+	width: 800px;
+	height: 256px;
+	background: url(../img/features-2.jpg) no-repeat center;
+}
+
 .features-hints {
 	width: 100%;
-	background-color: #eee;
+	background-color: #fff;
 	outline: 1px solid #10d;
 }
 
 .features-hints-list {
-
 	display: flex;
 	flex-flow: row nowrap;
 	/*align-items: center;*/
@@ -344,7 +355,6 @@ a {
 	margin: 0;
 	padding: 0;
 	outline: 4px solid #ff0000;
-
 }
 
 .features-hints-item {
