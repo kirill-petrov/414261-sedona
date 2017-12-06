@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;;
+	box-sizing: border-box;;
 }
 
 body {
@@ -22,8 +22,8 @@ a {
 .container {
 	width: 1200px;
 	margin: 0 auto;
-  /*box-shadow: */
-    background-color: #fff;
+	/*box-shadow: */
+	background-color: #fff;
 }
 
 .main-header {
@@ -38,13 +38,13 @@ a {
 }
 
 .nav-header-logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 138px;
-  height: 70px;
-  margin: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 138px;
+	height: 70px;
+	margin: auto;
 }
 
 .nav-list {
@@ -106,30 +106,30 @@ a {
 }
 
 .filter-group {
-  border: none;
+	border: none;
 }
 
 .filter-title {
 	font-weight: bold;
-  font-size: 16px;
-  line-height: 1.31;
-  color: #fff;
+	font-size: 16px;
+	line-height: 1.31;
+	color: #fff;
 }
 
 .filter-name {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #fff;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #fff;
 }
 
 .filter-btn {
 	font-family: inherit;
-  font-size: 14px;
-  line-height: 1.5;
-  text-transform: uppercase;
-  color: #fff;
+	font-size: 14px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	color: #fff;
 	background-color: transparent;
-  border: 2px solid #fff;
+	border: 2px solid #fff;
 }
 
 .filter-btn:hover {
@@ -151,8 +151,8 @@ a {
 }
 
 .sorter-link {
-  color: #cacaca;
-  border-bottom: 1px dashed #81b3d2;
+	color: #cacaca;
+	border-bottom: 1px dashed #81b3d2;
 }
 
 
@@ -161,8 +161,8 @@ a {
 }
 
 .sorter-link:active {
-  color: #000;
-  border-bottom: none;
+	color: #000;
+	border-bottom: none;
 }
 
 .sorter-min-max-link {
@@ -178,8 +178,8 @@ a {
 }
 
 .sorter-link-current {
-  color: #81b3d2;
-  border-bottom: none;
+	color: #81b3d2;
+	border-bottom: none;
 }
 
 
@@ -251,13 +251,13 @@ a {
 
 .visually-hidden {
 	position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }
 
 .features-descript-wrap {
@@ -294,20 +294,11 @@ a {
 }
 
 .features-item {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
 	text-align: center;
 	width: 400px;
-
-	/*
-	margin: 0;
-	padding: 28px 48px;
-	color: #fff;
-	background: #81b3d2;
-	outline: 8px solid #FFFC00; */
 }
+
 
 .features-item:nth-child(1) {
 	width: 100%;
@@ -315,7 +306,6 @@ a {
 	background: url(../img/features-1.jpg) no-repeat right 55%;
 	background-color: #81b3d2;
 	color: #fff;
-	outline: 4px solid #FD349D;
 }
 
 .features-item:nth-child(3) {
@@ -327,6 +317,10 @@ a {
 	outline: 4px solid #FD349D;
 }
 
+.features-item:nth-child(3) .features-text-wrap {
+	margin-left: auto;
+}
+
 .features-item:nth-child(n+4) {
 	min-height: 256px;
 	color: #000;
@@ -334,35 +328,52 @@ a {
 	outline: 4px solid #941;
 }
 
-.features-title {
-	font-size: 21px;
-	line-height: 1;
-	font-weight: bold;
+
+
+.features-text-wrap {
+	outline: 4px solid #D0CF2E;
+	background-color: #A331D2;
+	
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	width: 400px;
+	margin: 0px;
+	margin-right: auto;
 }
 
-/* .features-photo-city {
-	width: 800px;
-	height: 256px;
-	background: url(../img/features-1.jpg) no-repeat center;
-} */
+.features-title {
+	background-color: #0E0EE6;
+	width: 120px;
+	padding-top: 48px;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 1;
+}
 
-/* .features-photo-bridge {
-	width: 800px;
-	height: 256px;
-	background: url(../img/features-2.jpg) no-repeat center;
-} */
+.features-number {
+	background-color: #7FD1A9;
+	padding-top: 25px;
+}
+
+.features-details {
+	background-color: #997848;
+	width: 280px;
+	margin: 0;
+	padding-top: 23px;
+}
 
 .features-hints {
+	background-color: #C34;
 	width: 100%;
-	background-color: #fff;
 }
 
 .features-hints-list {
 	display: flex;
 	flex-flow: row nowrap;
-	/*align-items: center;*/
+	align-items: center;
 	justify-content: space-around;
-	height: 330px;
+	min-height: 330px;
 	margin: 0;
 	padding: 0;
 }
@@ -372,7 +383,8 @@ a {
 	flex-direction: column;
 	align-items: center;
 	width: 300px;
-	text-align: center;	
+	text-align: center;
+	outline: 4px solid #FD349D;
 }
 
 
@@ -519,6 +531,3 @@ a {
 	font-size: 14px;
 	line-height: 1.86;
 }
-
-/* --- Сеточные стили --- */
-
