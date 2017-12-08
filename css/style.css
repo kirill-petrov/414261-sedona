@@ -294,17 +294,20 @@ a {
 }
 
 .features-item {
-	/*background-color: #F9AB45;*/
 	display: flex;
 	text-align: center;
 	min-height: 256px;
 }
 
 .features-item-full-width {
-	/*outline: 8px solid #4CFD34;*/
 	width: 100%;
 }
 
+.features-item:nth-child(n+4) {
+	/*min-height: 256px;*/
+	color: #000;
+	background: #eee;
+}
 
 
 .features-pic-wrap {
@@ -322,25 +325,14 @@ a {
 
 
 
-.features-item:nth-child(n+4) {
-	/*min-height: 256px;*/
-	color: #000;
-	background: #eee;
-	outline: 4px solid #941;
-}
-
-
-
-
-.features-text-wrap {
-	/*background-color: #81B3D2;*/
-	
+.features-text-wrap {	
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	width: 400px;
 	margin: 0px;
-	margin-right: auto;	
+	margin-right: auto;
+	padding: 0 50px;
 }
 
 .features-text-bg {
@@ -349,51 +341,47 @@ a {
 }
 
 .features-title {
-	background-color: #0E0EE6;
-	width: 120px;
 	padding-top: 48px;
+	padding-right: 70px;
+	padding-left: 70px;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 1;
 }
 
 .features-number {
-	background-color: #7FD1A9;
 	padding-top: 25px;
 }
 
 .features-details {
 	background-color: #997848;
-	width: 280px;
 	margin: 0;
-	/*margin-bottom: 60px;*/
-	padding-top: 23px;
+	padding-top: 33px; /* отнять 10px */
 }
 
 .features-hints {
-	background-color: #C34;
 	width: 100%;
+	min-height: 330px;
 }
 
-.features-hints-list {
+.hints-list {
+	text-align: center;
 	display: flex;
 	flex-flow: row nowrap;
-	align-items: center;
-	justify-content: space-around;
-	min-height: 330px;
 	margin: 0;
 	padding: 0;
 }
 
-.features-hints-item {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 300px;
-	text-align: center;
-	outline: 4px solid #FD349D;
+.hints-title {
+	padding-top: 161px;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 1;
 }
 
+.hints-details {
+	padding-top: 11px;
+}
 
 
 .search {
@@ -537,4 +525,30 @@ a {
 .footer-copyright-text {
 	font-size: 14px;
 	line-height: 1.86;
+}
+
+
+.footer-hashtag {
+	outline: 1px solid #D89191;
+	/*margin-right: 25px;*/
+	padding-left: 15px;
+}
+
+.footer-social-list {
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
+	margin: 0;
+	margin-right: 25px;
+  padding: 0;
+
+}
+
+.social-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 46px;
+	height: 48px;
+	background-color: #81B3D2;
 }
