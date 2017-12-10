@@ -33,7 +33,7 @@ a {
 
 .main-header-bg {
 	min-height: 564px;
-	background: url(../img/index-main-header.png) no-repeat 0 100%;
+	background: url("../img/index-main-header.png") no-repeat 0 100%;
 }
 
 .nav {
