@@ -918,6 +918,7 @@ a {
 	}
 
 	.range-toggle {
+		box-sizing: initial;
 		position: absolute;
 		top: -9px;
 		width: 4px;
@@ -925,12 +926,12 @@ a {
 		background: #ababab;
 		border: 8px solid #fff;
 		border-radius: 50%;
-		-webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 		box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
 		cursor: pointer;
 	}
 
 	.range-toggle:hover {
+		background: #1c4f80;
 		width: 5px;
 		height: 5px;
 	}
@@ -976,10 +977,10 @@ a {
 
 	.sort span {
 		display: block;
+		font-weight: bold;
 		font-size: 21px;
 		line-height: 1.3;
-		font-weight: 400;
-		color: #000000;
+		color: #000;
 		min-height: 26px;
 		margin-left: 72px;
 		margin-top: 29px;
