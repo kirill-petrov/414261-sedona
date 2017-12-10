@@ -1060,6 +1060,8 @@ a {
 	border-bottom: none;
 }
 
+
+
 .sort button {
 	background-color: transparent;
 	border: none;
@@ -1082,6 +1084,50 @@ a {
 	margin-right: 75px;
 }
 
+.sort-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  width: 13px;
+  height: 14px;
+  text-indent: -9999px;
+  text-decoration: none;
+}
+
+.sort-btn.active::before,
+.sort-btn.active:hover::before {
+  color: #81b3d2;
+  cursor: text;
+}
+
+.sort-btn::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  color: #ccc;
+  text-indent: initial;
+}
+
+.sort-btn:hover::before {
+  color: #000;
+}
+
+.sort-btn:active::before {
+  color: #81b3d2;
+}
+
+.sort-btn-asc::before {
+  content: "▲";
+}
+
+.sort-btn-desc::before {
+  content: "▼";
+}
+
+
+/*
 .sort-buttons button {
 	border: none;
 	border-radius: 0;
@@ -1114,7 +1160,7 @@ a {
 }
 
 .ascending:hover::before {
-	border-color: transparent transparent #0000 transparent;
+	border-color: transparent transparent #000 transparent;
 	cursor: pointer;
 }
 
@@ -1137,7 +1183,7 @@ a {
 
 .triangle-current:nth-child(2)::before {
 	border-color: #81b3d2 transparent transparent transparent;
-}
+}*/
 
 .catalog-list {
 	padding: 0px;
