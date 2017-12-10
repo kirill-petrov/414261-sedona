@@ -90,6 +90,9 @@ a {
 }
 
 .nav-link-current {
+	font-weight: bold;
+	font-size: 14;
+	line-height: 1.5;
 	color: #766357
 }
 
