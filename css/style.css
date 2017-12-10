@@ -73,7 +73,7 @@ a {
 
 .nav-link {
 	font-weight: bold;
-	font-size: 14;
+	font-size: 14px;
 	line-height: 1.5;
 }
 
@@ -91,7 +91,7 @@ a {
 
 .nav-link-current {
 	font-weight: bold;
-	font-size: 14;
+	font-size: 14px;
 	line-height: 1.5;
 	color: #766357
 }
